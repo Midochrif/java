@@ -32,17 +32,18 @@ class Date {
   }
   int DiffDate(Date d){
     int res=0;
+    res= Math.abs((this.A-d.A-1)*365+((this.M-1)+(12-d.M))*30+(this.J+(30-d.J)));
 
-    
+  
     return res;
 
   }
   
     public static void main(String[] args){
-      Date d=new Date();
+      /*  Date d=new Date();
       d.afficher();
       d.ChangerDate(2,3,2023);
-      d.afficher();
+      d.afficher();*/
     
     Date d1=new Date();
     Date d2=new Date();
